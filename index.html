@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALPHABET CLASH</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- cdn tailwind link     -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-[#010313] min-h-screen bg-no-repeat bg-center bg-[url(pic/background.png)]"
+  >
+    <header></header>
+
+    <!-- // start section -->
+    <section
+      id="hidden"
+      class="container mx-auto flex justify-center items-center"
+    >
+      <div
+        class="min-h-screen flex flex-col justify-center items-center anton-regular text-white"
+      >
+        <h1 class="text-[100px] anton-regular">ALPHABET CLASH</h1>
+        <p class="m-3 text-[#FFFFFFA1]">
+          Unleash Your Keyboard Kung Fu : Press “Enter” to Play
+        </p>
+        <button onclick="startClick() " class="btn">Play Now</button>
+      </div>
+    </section>
+    <!-- ply section  -->
+    <section id="show" class="container mx-auto hidden">
+      <section class="container mx-auto">
+        <div class="flex justify-center items-center pt-10">
+          <div
+            class="artboard artboard-horizontal phone-6 border-[20px] bg-[#FFFFFFB3] border-[#010313CC]"
+          >
+            <div
+              class="text-center flex text-white justify-center items-center"
+            >
+              <p class="bg-[#2F2941]">Don't watch keyboard while playing...</p>
+            </div>
+            <div class="flex justify-center items-center mt-28">
+              <span
+                id="add"
+                class="text-red-800 uppercase text-7xl anton-regular"
+                >p</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- score section -->
+      <section class="ply-grouend pt-4 container mx-auto">
+        <div>
+          <div class="flex justify-center gap-1 my-1 w-full">
+            <kbd id="q" class="kbd">q</kbd>
+            <kbd id="w" class="kbd">w</kbd>
+            <kbd id="e" class="kbd">e</kbd>
+            <kbd id="r" class="kbd">r</kbd>
+            <kbd id="t" class="kbd">t</kbd>
+            <kbd id="y" class="kbd">y</kbd>
+            <kbd id="u" class="kbd">u</kbd>
+            <kbd id="i" class="kbd">i</kbd>
+            <kbd id="o" class="kbd">o</kbd>
+            <kbd id="p" class="kbd">p</kbd>
+          </div>
+          <div class="flex justify-center gap-1 my-1 w-full">
+            <kbd id="a" class="kbd">a</kbd>
+            <kbd id="s" class="kbd">s</kbd>
+            <kbd id="d" class="kbd">d</kbd>
+            <kbd id="f" class="kbd">f</kbd>
+            <kbd id="g" class="kbd">g</kbd>
+            <kbd id="h" class="kbd">h</kbd>
+            <kbd id="j" class="kbd">j</kbd>
+            <kbd id="k" class="kbd">k</kbd>
+            <kbd id="l" class="kbd">l</kbd>
+          </div>
+          <div class="flex justify-center gap-1 my-1 w-full">
+            <kbd id="z" class="kbd">z</kbd>
+            <kbd id="x" class="kbd">x</kbd>
+            <kbd id="c" class="kbd">c</kbd>
+            <kbd id="v" class="kbd">v</kbd>
+            <kbd id="b" class="kbd">b</kbd>
+            <kbd id="n" class="kbd">n</kbd>
+            <kbd id="m" class="kbd">m</kbd>
+            <kbd id="/" class="kbd">/</kbd>
+          </div>
+        </div>
+      </section>
+      <!-- score section -->
+      <section class="container mx-auto">
+        <div class="flex justify-between">
+          <button class="btn">
+            Life
+            <h1><i class="fa-solid fa-heart"></i></h1>
+            <span>1</span>
+          </button>
+          <button class="btn">
+            Score
+            <h1><i class="fa-solid fa-heart"></i></h1>
+            <span>1</span>
+          </button>
+        </div>
+      </section>
+    </section>
+    <!-- score section  -->
+    <section
+      class="container mx-auto hidden flex justify-center items-center flex-col min-h-screen"
+    >
+      <div
+        class="text-center bg-gradient-to-r from-[#FFFFFF8F] to-[#989797] border border-[#FFFFFF12]"
+      >
+        <h1 class="text-7xl text-white">Score <span>14</span></h1>
+        <button class="btn">Play Continue</button>
+        <p>Practice will make you Pro</p>
+      </div>
+    </section>
+    <script src="script/script.js"></script>
+    <script src="script/uitility.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9203b352ef.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
