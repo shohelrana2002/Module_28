@@ -99,25 +99,29 @@
           <button class="btn">
             Life
             <h1><i class="fa-solid fa-heart"></i></h1>
-            <span>1</span>
+            <span id="life">5</span>
           </button>
           <button class="btn">
             Score
             <h1><i class="fa-solid fa-heart"></i></h1>
-            <span>1</span>
+            <span id="score">0</span>
           </button>
         </div>
       </section>
     </section>
     <!-- score section  -->
     <section
+      id="score-update"
       class="container mx-auto hidden flex justify-center items-center flex-col min-h-screen"
     >
       <div
-        class="text-center bg-gradient-to-r from-[#FFFFFF8F] to-[#989797] border border-[#FFFFFF12]"
+        class="text-center bg-gradient-to-r p-5 from-[#FFFFFF8F] to-[#989797] border border-[#FFFFFF12]"
       >
-        <h1 class="text-7xl text-white">Score <span>14</span></h1>
-        <button class="btn">Play Continue</button>
+        <h3 class="text-4xl">Game Over</h3>
+        <h1 class="text-2xl text-white">
+          Your Score <span id="game-over-update">14</span>
+        </h1>
+        <button onclick="startClick()" id="" class="btn">Play Agin</button>
         <p>Practice will make you Pro</p>
       </div>
     </section>

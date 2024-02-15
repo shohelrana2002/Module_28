@@ -32,22 +32,26 @@ function sceBgRemove(setRemove) {
   set.classList.remove("bg-amber-300");
 }
 
-//////////////////////////////////
+///// score update function all
 
-// key press
-function buttonClickPressUp(event) {
-  const playerPress = event.key;
-  // console.log("plyer press ", playerPress);
-  // expected
-  const currentAlphabet = document.getElementById("add");
-  const currentTarget = currentAlphabet.innerText;
-  const expectedText = currentTarget.toLocaleLowerCase();
-  // console.log(expectedText, playerPress);
-  // check if else
-  if (playerPress === expectedText) {
-    sceBgRemove(expectedText);
-    continueGame();
-  } else {
-  }
+function scoreAllUpdate(eventId) {
+  const currentScore = document.getElementById(eventId);
+  const number = currentScore.innerText;
+  const numberConvert = parseInt(number);
+  return numberConvert;
 }
-document.addEventListener("keyup", buttonClickPressUp);
+
+// set text
+
+function setText(elementId, value) {
+  const setTextS = document.getElementById(elementId);
+  setTextS.innerText = value;
+}
+
+// current text
+
+function getElementTextById(element) {
+  const text = document.getElementById(element);
+  const set = text.innerText;
+  return set;
+}
